@@ -46,8 +46,17 @@ nav {
     text-decoration: none;
 }
 
+
 .navegation-links a{
     margin-right: 30px;
+}
+
+.navegation-social img:hover{
+    transform: scale(1.1);
+}
+
+.navegation-links-item:hover{
+    color: #000000
 }
 
 .navegation {
@@ -60,6 +69,7 @@ nav {
 
 .navegation-social img {
     margin-left: 10px;
+    transition: 0.3s;
 }
 
 
@@ -67,6 +77,8 @@ nav {
 nav span {
     font: size 18px;
 }
+
+
 
 
 /*------------------- INTRODUCTION -------------------*/
@@ -128,6 +140,8 @@ nav span {
     scroll-behavior: smooth;
 }
 
+
+
 .introduction-text a img {
     margin-left: 10px;
     height: 15px;
@@ -161,6 +175,11 @@ nav span {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
+    transition: 0.6s;
+}
+
+.roles-frontend:hover{
+    transform: scale(1.03);
 }
 
 .roles-frontend-text {
@@ -183,6 +202,11 @@ nav span {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: 0.6s;
+}
+
+.roles-diseño-grafico:hover{
+    transform: scale(1.03);
 }
 
 .roles-diseño {
@@ -205,6 +229,11 @@ nav span {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: 0.6s;
+}
+
+.roles-diseño-ux:hover{
+    transform: scale(1.03);
 }
 
 .roles-diseño-ux img {
@@ -572,73 +601,8 @@ nav span {
 }
 
 
-/*------------------- CONTACT -------------------*/
-
-
-/* 
-
-.form-contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: auto;
-    margin-top: 30px;
-    padding-bottom:40px;
-}
-
-.form-contact-container form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-contact {
-    width: 450px;
-    height: 350px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: white;
-}
-
-.form-contact input {
-    max-width: 420px;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #EFEFEF;
-    border: none;
-}
-
-.form-contact button {
-    color: white;
-    background-color: #000000;
-    border-radius: 20px;
-    border: none;
-    font-size: 18px;
-    width: 100px;
-    padding: 5px 20px;
-    cursor: pointer;
-}
-
-
-
-
-footer {
-    height: 50px;
-}
-
 
 /*------------------- FORM -------------------*/
-
-
-
 
 ::selection{
     color: #fff;
@@ -737,13 +701,15 @@ form .button-area{
     outline: none;
     font-size: 18px;
     cursor: pointer;
+    background-color: #22252A;
+    box-shadow: inset 0 0 0 0 #56575a;
     border-radius: 23px;
     padding: 10px 25px;
     background: #22252A;
-    transition: background 0.3s ease;
+    transition: ease-out 0.3s;
 }
 .button-area button:hover{
-    background: #22252A;
+    box-shadow: inset 100px 0 0 0 #727374;
 }
 .button-area span{
     font-size: 17px;
@@ -808,3 +774,41 @@ form .button-area{
     text-align: center;
     margin-top: 200px;
 }
+
+footer {
+    height: 50px;
+}
+
+
+
+/*------------------- THANK YOU PAGE -------------------*/
+
+
+.thanks-nav a{
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #22252A;
+    margin-left: 5px;
+}
+
+.thanks-nav_a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes example {
+    from {transform: translate(1);}
+    to {transform: translate(2);}
+}
+
+.thanks-page {
+    height: 450px;
+    background-image: url(../imagenes/fondo.png);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+

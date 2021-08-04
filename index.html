@@ -11,37 +11,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="imagenes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Gonza Tarno | Diseñador y Desarrollador</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="animate__animated animate__fadeInDown">
             <span><b>GONZA</b>TARNO</span>
     
             <div class="navegation">
                 <div class="navegation-links">
-                    <a href="#projects-grid">Proyectos</a>
-                    <a href="#experience">Experiencia</a>
-                    <a href="#contact">Contacto</a>
+                    <a href="#projects-grid" class="navegation-links-item">Proyectos</a>
+                    <a href="#experience" class="navegation-links-item">Experiencia</a>
+                    <a href="#contact" class="navegation-links-item">Contacto</a>
                 </div>
         
                 <div class="navegation-social">
-                    <a href="https://www.linkedin.com/in/gonzalotarnofsky/" target="_blank"><img src="./imagenes/linkedin.png"></a>
-                    <a href="https://github.com/gonzatarno" target="_blank"><img src="./imagenes/github.png"></a>
-                    <a href="https://www.behance.net/gonzatarno" target="_blank"><img src="./imagenes/behance.png"></a>
-                    <a href="https://dribbble.com/Gonzatarno" target="_blank"><img src="./imagenes/dribbble.png"></a>
+                    <a  href="https://www.linkedin.com/in/gonzalotarnofsky/" target="_blank"><img src="./imagenes/linkedin.png"></a>
+                    <a href="https://github.com/gonzatarno"  target="_blank"><img src="./imagenes/github.png"></a>
+                    <a href="https://www.behance.net/gonzatarno"  target="_blank"><img src="./imagenes/behance.png"></a>
+                    <a href="https://dribbble.com/Gonzatarno"  target="_blank"><img src="./imagenes/dribbble.png"></a>
                 </div>
             </div>
         </nav>
     </header>
 
     <section class="introduction">
-        <div class="introduction-text">
+        <div class="introduction-text animate__animated animate__fadeInLeft">
             <h5>Desarrollador Frontend Jr / Diseñador UX-UI Jr</h5>
             <h1>Hola, soy Gonza!</h1>
             <div class="border"></div>
             <p>Soy estudiante en UADE de Diseño Gráfico y Diseño Multimedia. Actualmente me encuentro aprendiendo y sumando conocimientos en el mundo de la programación Frontend y UX / UI.</p>
-            <a class="introduction-text_a" href="#roles">Conocéme <img src="./imagenes/arrow.png"></a>
+            <a class="introduction-text_a animate__animated animate__headShake animate__delay-1s" href="#roles">Conocéme <img src="./imagenes/arrow.png"></a>
         </div>
         <img src="./imagenes/perfil.png">
     </section>
@@ -302,6 +303,7 @@
             <div class="form-contact-container"> 
                 <div class="wrapper">
                     <form action="https://formsubmit.co/gonzalotarnofsky@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://gonzatarno.vercel.app/gracias.thml">
                         <div class="dbl-field">
                             <div class="field">
                             <input type="text" name="name" placeholder="Escriba su nombre" required>
@@ -361,7 +363,6 @@
         </nav>
     </footer>
 
-    <script src="script.js"></script>
 
 </body>
 </html>
