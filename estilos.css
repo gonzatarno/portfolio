@@ -53,7 +53,7 @@ nav {
     max-width: 1100px;
     margin: auto;
     padding: auto;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .navegation-logo {
@@ -152,14 +152,14 @@ nav span {
     max-width: 1100px;
     margin: auto;
     padding: auto;
-    padding-top: 60px;
+    padding-top: 50px;
     margin-bottom: 60px;
     justify-content: space-between;
 }
 
 .introduction-text {
-    margin-top: 90px;
-    width: 560px;
+    padding-top: 100px;
+    width: 600px;
     color: #ffffff;
 }
 
@@ -167,6 +167,7 @@ nav span {
     font-size: 18px;
     line-height: 1.4;
     color: #d3d3d3;
+    margin: 20px 0;
 }
 
 .introduction-text h5 {
@@ -216,17 +217,66 @@ nav span {
     height: 13px;
 }
 
-.border {
-    border: solid #ecabc2 1px;
-    width: 150px;
-    margin: 30px 0;
-}
-
 .introduction-img {
-    width: 500px;
-    height: 500px;
+    width: 570px;
+    height: 570px;
+    
 }
 
+
+/*------- word INTRODUCTION -------*/
+
+.wrapper-word{
+    display: flex;
+    }
+    .wrapper-word .static-txt{
+        color: #fff;
+        font-size: 60px;
+        font-weight: 800;
+    }
+    .wrapper-word .dynamic-txts{
+        margin-top: 10px;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+    }
+    .dynamic-txts li{
+        list-style: none;
+        color: #ecabc2;
+        font-size: 60px;
+        font-weight: 800;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    @keyframes slide {
+        100%{
+        top: -360px;
+        }
+    }
+    .dynamic-txts li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 80px;
+    }
+    .dynamic-txts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #5c45cd;
+        border-left: 2px solid #ecabc2;
+        animation: typing 3s steps(9) infinite;
+    }
+    @keyframes typing {
+        40%, 60%{
+        left: calc(100% + 30px);
+        }
+        100%{
+        left: 0;
+        }
+    }
 
 
 /*------------------- ROLES -------------------*/
@@ -332,6 +382,12 @@ nav span {
     margin-top: 200px;
 }
 
+.projects-text h2 {
+    transition: 0.4s;
+}
+.projects-text h2:hover {
+    color: #5c45cd;
+}
 .project-container_text p {
     font-size: 13px;
     color: #767676;
@@ -392,14 +448,14 @@ nav span {
     padding: 7px 20px;
     margin-left: 15px;
     color: white;
-    background-color: #5c45cd;
+    background-color: #ecabc2;
     border-radius:50px;
     font-size: 14px;
     transition: 0.3s;
 }
 
 .projects-tags p:hover {
-    background-color: #ecabc2;
+    background-color: #5c45cd;
 }
 
 .project-p {
@@ -426,7 +482,7 @@ nav span {
     text-align: center;
 }
 
-.more-projects-social{
+.more-projects-social i{
     margin: 0 8px;
     transition: 0.3s;
     color: #5c45cd;
@@ -489,8 +545,12 @@ nav span {
     text-align: center;
     margin-top: 190px;
     margin-bottom: 40px;
+    transition: 0.4s;
 }
 
+.skills h2:hover {
+    color: #5c45cd;
+}
 
 
 
@@ -543,6 +603,11 @@ nav span {
     margin-top: 170px;
     margin-bottom: 40px;
     padding-top: 15px;
+    transition: 0.4s;
+}
+
+#experience h2:hover {
+    color: #5c45cd;
 }
 
 
@@ -553,8 +618,12 @@ nav span {
     text-align: center;
     margin-top: 170px;
     margin-bottom: 40px;
+    transition: 0.4s;
 }
 
+.studies h2:hover{
+    color: #5c45cd;
+}
 .studies-container {
     display: flex;
     flex-direction: row;
@@ -905,6 +974,7 @@ form .button-area{
     justify-content: center;
     text-align: center;
     margin-top: 200px;
+    margin-bottom: 30px;
 }
 
 footer {
@@ -959,7 +1029,9 @@ footer p{
 
 .thanks-page {
     height: 500px;
-    background-image: url(../imagenes/fondo.png);
+    background-color: #e2e2e2;
+    background-repeat: no-repeat;
+    background-size: cover;
     animation-duration: 4s;
 }
 
@@ -969,7 +1041,7 @@ footer p{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 .ty-text p{
