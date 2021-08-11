@@ -16,6 +16,7 @@
     <title>Gonza Tarno | Diseñador y Desarrollador</title>
 </head>
 <body>
+
     <header>
         <nav class="animate__animated animate__fadeInDown">
             <a class="navegation-logo" href="index.html"><span><b>GONZA</b>TARNO</span></a>
@@ -366,17 +367,17 @@
 
     <footer>
         <nav>
-            <a class="navegation-logo" href="index.html"><span><b>GONZA</b>TARNO</span></a>
-            <p>2021 Derechos Reservados</p>
+            <a class="navegation-logo footer-top" href="index.html"><span><b>GONZA</b>TARNO</span></a>
+            <p class="footer-top">2021 Derechos Reservados</p>
     
             <div class="navegation">
-                <div class="navegation-links">
+                <div class="navegation-links footer-top">
                     <a href="#projects-grid">Proyectos</a>
                     <a href="#experience">Experiencia</a>
                     <a href="#">Contacto</a>
                 </div>
         
-                <div class="navegation-social">
+                <div class="navegation-social footer-top">
                     <a  href="https://www.linkedin.com/in/gonzalotarnofsky/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/gonzatarno"  target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.behance.net/gonzatarno"  target="_blank"><i class="fab fa-behance"></i></a>
@@ -385,6 +386,34 @@
             </div>
         </nav>
     </footer>
+
+    
+    <script type="text/javascript">
+
+        const body = document.body;
+        let lastScroll = 0;
+
+
+        window.addEventListener("scroll", function() {
+            const currentScroll = window.pageYOffset
+
+            if (currentScroll <= 0) {
+                body.classList.remove("scroll-up")
+            }
+
+            if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-up")
+                body.classList.add("scroll-down")
+            }
+
+            if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
+                body.classList.remove("scroll-down")
+                body.classList.add("scroll-up")
+            }
+            
+            lastScroll = currentScroll; 
+        })
+    </script>
 
 
 </body>
