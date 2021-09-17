@@ -1565,11 +1565,14 @@ footer p{
         }
     
 
+        .roles-frontend {
+            background-color: #F0B7CB;
+        }
 
         .roles-diseño-grafico {
             width: 100%;
             height: 200px;
-            background-color: #e4e1e1;
+            background-color: #F9C3D6;
         }
 
         .roles-diseño img {
@@ -1579,7 +1582,7 @@ footer p{
         .roles-diseño-ux {
             width: 100%;
             height: 200px;
-            background-color: #cecece;
+            background-color: #FFE2EC;
         }
     
         .roles-text {
@@ -1623,7 +1626,7 @@ footer p{
         .project-img {
             display: flex;
             justify-content: flex-end;
-            
+            padding-top: 10px;
         }
         
         .project-container_text {
@@ -1823,7 +1826,24 @@ footer p{
     }
 
 
+    /* Scrollbar */
 
 
+    ::-webkit-scrollbar {
+        width: 10px;
+        transition: 0.3s;
+    }
 
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+    }
 
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #313131;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1f1f1f;
+    }

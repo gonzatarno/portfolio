@@ -16,6 +16,11 @@
     <title>Gonza Tarno | Diseñador y Desarrollador</title>
 </head>
 <body>
+    <div id="wrapper">
+        <div class="scrollbar" id="style-1">
+            <div class="force-overflow"></div>
+        </div>
+    </div>
 
     <header>
         <nav class="animate__animated animate__fadeInDown">
@@ -412,7 +417,14 @@
             }
             
             lastScroll = currentScroll; 
-        })
+        });
+
+
+        $(document).ready(function () {
+            if (!$.browser.webkit) {
+                $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+            }
+        });
     </script>
 
 
